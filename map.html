@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>地图</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/map.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <!--高德地图-->
+        <script type="text/javascript" src='http://webapi.amap.com/maps?v=1.4.2&key=7f4a622a9ffc3b373b1ca1f3bed59cbb&plugin=AMap.ToolBar'></script>
+        <!-- UI组件库 1.0 -->
+        <script src="http://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    </head>
+    <body style="background: #f2f2f2;">
+        <div class="common_box">
+            <div class="common_header map_header clearfix">
+                <a href="javascript:history.go(-1)"><img src="img/back_l.png"/></a>
+                <span class="mapheader_m"><img src="img/search.png">
+                    <input type="text" placeholder="请输入搜索内容"/></span>
+                <span class="mapheader_r"><img src="img/cancel.png" alt="" /></span>
+            </div>
+            
+            <div class="map_main" id="map"></div>
+            
+            <div class="map_sides">
+                <div class="localtion"><img src="img/locat.png" alt="" /></div>
+                <div class="findmore"><a href="mapClassification.html"><img src="img/findm.png" alt="" /></a></div>
+            </div>
+             
+            <div class="but_more">点击查看列表</div>
+            
+            <div class="moreshop_list">
+                <div class="down_moreshop"><img src="img/drop.png"/></div>
+                <a href="mapShop.html">
+                    <div class="shop_single clearfix">
+                        <div class="text_left">
+                            <p>星车酷专业汽车服务</p>
+                            <span><em>58米</em>望岗大道</span>
+                        </div>
+                        <span class="icon_call"><i><img src="img/call_l.png" /></i></span>
+                        <span class="icon_loca"><i><img src="img/loca.png" /></i>线路</span>
+                    </div>
+                </a>
+                <a href="mapShop.html">
+                    <div class="shop_single clearfix">
+                        <div class="text_left">
+                            <p>广州威顺达二手汽贸分公司</p>
+                            <span><em>19米</em>嘉禾望岗金龟子公寓1楼</span>
+                        </div>
+                        <span class="icon_loca"><i><img src="img/loca.png" /></i>线路</span>
+                    </div>
+                </a>
+                <a href="mapShop.html">
+                    <div class="shop_single clearfix">
+                        <div class="text_left">
+                            <p>黄石康祥汽车美容维修中心</p>
+                            <span><em>199米</em>地铁嘉禾望岗站C出口西100米</span>
+                        </div>
+                        <span class="icon_call"><i><img src="img/call_l.png" /></i></span>
+                        <span class="icon_loca"><i><img src="img/loca.png" /></i>线路</span>
+                    </div>
+                </a>
+                <a href="mapShop.html">
+                    <div class="shop_single clearfix">
+                        <div class="text_left">
+                            <p>骏成惠众汽车服务部</p>
+                            <span><em>200米</em>华英路与德兴二路交叉路口</span>
+                        </div>
+                        <span class="icon_loca"><i><img src="img/loca.png" /></i>线路</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mapshop_name">
+                <a href="mapShop.html">
+                    <div class="mapshop_left">
+                        <p>广州威顺达二手汽贸分公司</p>
+                        <span class="shop_address"><em>19米</em>嘉禾望岗金龟子公寓1楼</span>
+                        <div class="pa_start">
+                            <span class="start_ling"></span>
+                            <span class="start_ling"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </a>
+                <div class="mapshop_right">
+                    <span><i><img src="img/navigat.png" alt="" /></i></span>
+                    <span><i><img src="img/call_l.png" /></i>电话</span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>店铺详情</title>
+        <link rel="stylesheet" href="css/bannerList.css">
+        <link rel="stylesheet" href="css/swiper.min.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/goodsDetails.css" />
+        <script type="text/javascript" src="js/bannerList.js" ></script>
+        <script type="text/javascript" src="js/jquery.min.js" ></script>
+    </head>
+    <body style="background: #f2f2f2;">
+        <div class="common_box goodsDetails_box">
+            <div class="common_header transparent clearfix">
+                <a href="javascript:history.go(-1)"><img src="img/return.png"/></a>
+                <p></p>
+                <span><img src="img/share.png" alt="" /></span>
+            </div>
+            <div class="container">
+                <div class="banner goods_banner">
+                    <ul>
+                      <li><img src="img/goods2.jpg"></li>
+                      <li><img src="img/goods1.jpg"></li>
+                    </ul>
+                    <div class="img-btn-list img-btn-list2 img_span"></div>
+                </div>
+            </div>
+            <div class="goods_brief">
+                <p>车仆汽车表板蜡仪表盘蜡车蜡美容保养用品内饰上光表面版腊包邮</p>
+                <span class="goodsPrice"><em>¥</em>19.00</span>
+                <span class="postage">快递费：包邮</span>
+            </div>
+            <a href="" class="comment clearfix"><span>评论（0）</span><span>查看全部 ></span></a>
+            <div class="goodsDetails">
+                <p>商品详情</p>
+                <span>品牌名称：车仆<br />车蜡类型: 表板蜡<br />功能: 上光 去污 防水 防高温 防静电 防紫外线 护色 防磨损 防氧化 <br /></span>
+            </div>
+            <div class="goodsdetails_img">
+                <img src="img/goods2.jpg" alt="" />
+            </div>
+            <div class="goods_bot">
+                <a href="shopDetails1.html"><span class="goodsBot_shop"><i><img src="img/shopLogo.png"/></i>店铺</span></a>
+                <span class="goodsBot_call"><i><img src="img/call.png"/></i>咨询</span>
+                <span class="cunhuo">存货</span>
+                <span class="buynow">立即拿货</span>
+            </div>
+            
+            <div class="sku_bg"></div>
+                <div class="sku_box">
+                    <div class="sku_top">
+                        <div class="sku_img">
+                            <img src="img/goods1.jpg" alt="" />
+                        </div>
+                        <div class="sku_title">
+                            <em>¥</em><span class="sku_price">19.00</span>
+                            <span class="sku_click">请选择规格</span>
+                            <span class="cancel"><img src="img/x.png"/></span>
+                        </div>
+                    </div>
+                    <div class="sku_choice">
+                        <div class="choice_box">
+                            <p>规格分类</p>
+                            <ul class="clearfix">
+                                <li class="active_choice">250ml</li>
+                                <li>450ml</li>
+                                <li>1000ml</li>
+                                <li>2500ml</li>
+                            </ul>
+                        </div>
+                        <div class="choice_box">
+                            <p>规格分类</p>
+                            <ul class="clearfix">
+                                <li>450ml</li>
+                                <li>1000ml</li>
+                                <li>2500ml</li>
+                            </ul>
+                        </div>
+                        <div class="choice_num clearfix">
+                            <span class="num_name">购买数量</span>
+                            <span class="num_box">
+                                <button class="jian">-</button>
+                                <input type="text" placeholder="" value="1">
+                                <button class="add">+</button>
+                            </span>
+                        </div>
+                    </div>
+                    <a href="submitOrder.html">
+                        <div class="sure_buy">确定</div>
+                    </a>
+                </div>
+            
+
+        </div>
+        <script type="text/javascript">
+            bannerListFn(//轮播参数
+                $(".banner"),
+                $(".img-btn-list"),
+                $(".left-btn"),
+                $(".right-btn"),
+                3000,
+                true
+            );
+
+            $(".cunhuo").click(function(){
+                $(".sku_box").slideDown();
+                $(".sku_bg").fadeIn(200);
+            }); 
+            $(".buynow").click(function(){
+                $(".sku_box").slideDown();
+                $(".sku_bg").fadeIn(200);
+            }); 
+            $(".cancel").click(function(){
+                $(".sku_box").slideUp();
+                $(".sku_bg").fadeOut(200);
+            });
+            $(".sku_bg").click(function(){
+                $(".sku_box").slideUp();
+                $(".sku_bg").fadeOut(200);
+            });
+        </script>
+    </body>
+</html>

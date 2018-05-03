@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>保险询价</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/carInformation.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/insuranceInquiry.js"></script>
+    </head>
+    <body style="background: #f2f2f2;">
+        <div class="common_box">
+            <div class="common_header clearfix">
+                <a href="javascript:history.go(-1)"><img src="img/back_l.png"/></a>
+                <p>保险询价</p>
+            </div>
+            <ul class="modify_news">
+                <li>修改个人信息</li>
+                <li>修改投保方案</li>
+            </ul>
+            <ul class="progress_bar">
+                <li><span>报价完成：</span><span class="pro_span"><i></i></span><em class="pro_em">已完成100%</em></li>
+                <li>目前有<em>0</em>家保险公司给出报价</li>
+            </ul>
+            <div class="but_type">
+                <a href="insuranceDetails.html">
+                    <div class="buy_insurance">
+                        <div class="buy_main clearfix">
+                            <span class="buy_title">阳光车险</span><span class="buy_money">¥4000.00</span><em>奖¥500.00</em><span class="buy_now">立即购买</span>
+                        </div>
+                        <div class="buy_details"><i></i>搭电服务、送水服务、送油服务、现场快修、换胎服务
+                        </div>
+                    </div>
+                </a>
+                <a href="insuranceDetails.html">
+                    <div class="buy_insurance">
+                        <div class="buy_main clearfix">
+                            <span class="buy_title">大地车险</span><span class="buy_money">¥4000.00</span><em>奖¥500.00</em><span class="buy_now">立即购买</span>
+                        </div>
+                        <div class="buy_details"><i></i>接电、送油、加水、现场抢修、拖车和吊装服务
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <ul class="insurance_ul inquiry_ul">
+                <li class="noOffer_fu"><span>未报价公司</span><i><!-- <img src="img/go_r.png" alt="" /> --></i><input type="text" readonly="readonly" value="5家" placeholder=""/></li>
+                <div class="no_offer">
+                    <div>
+                        <h1>太平洋车险</h1>
+                        <span>商业险重复报价，止期：2019-01-15 23:59:59商业险重复报价，止期：2019-01-15 23:59:59</span>
+                    </div>
+                    <div>
+                        <h1>平安专业车险</h1>
+                        <span>商业险重复报价，止期：2019-01-15 23:59:59</span>
+                    </div>
+                    <div>
+                        <h1>阳光车险</h1>
+                        <span>商业险重复报价，止期：2019-01-15 23:59:59</span>
+                    </div>
+                    <div>
+                        <h1>大地车险</h1>
+                        <span>商业险重复报价，止期：2019-01-15 23:59:59</span>
+                    </div>
+                    <div>
+                        <h1>安盛天平车险</h1>
+                        <span>商业险重复报价，止期：2019-01-15 23:59:59</span>
+                    </div>
+                </div>
+                <li><span>商业险理赔</span><input type="text" readonly="readonly" value="上年赔款0次" placeholder=""/></li>
+                <li><span>交强险理赔</span><input type="text" placeholder="" value="上年赔款0次" readonly="readonly"/></li>
+            </ul>
+            <input type="button" class="button" value="分享报价">
+            <div class="btn_kefu oter_but">其他车辆询价</div>
+            <div class="btn_kefu"><i><img src="img/kefu.png"/></i>客服</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,209 @@
+.nav_footer span:first-child i{
+    background: url(../img/nav_footer.png) no-repeat 2px -27px;
+    background-size: 118px 53px;
+}
+.nav_footer span:nth-child(4) i{
+    background: url(../img/nav_footer.png) no-repeat -91px -27px;
+    background-size: 118px 53px;
+}
+.nav_footer span:nth-child(4){
+    color:#008BFE;
+}
+.header_qu span:last-child i{
+    width:55%;
+    height:70%;
+    margin:10% 12px;
+    float:right;
+    background:url(../img/my_icon.png) no-repeat -109px 5px;
+    background-size: 140px 137px;
+    display:inline-block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.mission{
+    height:90px;
+    background:#008bfe;
+    color:white;
+}
+ .mission img{
+    width:60px;
+    height:60px;
+    margin:18px 18px 12px 18px;
+   float:left;
+}
+.mission font{
+    font-size:1.5rem;
+    float:left;
+    margin-top:40px;
+    color:white;
+    max-width:45%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.mission font a{
+    color:white;
+}
+.mission em{
+    background:white;
+    border-radius:15px;
+    padding:0 16px;
+    text-align:center;
+    color:#008bfe;
+    display:inline-block;
+    line-height: 27px;
+    float:right;
+    margin-top:35px;
+    margin-right:15px;
+    font-size: 1.2rem;
+}
+.fans{
+    width: 100%;
+    height: 48px;
+    padding:11px 12px;
+    display:flex;
+    display:-webkit-flex;
+    background:white;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.fans span{
+    flex-grow:1;
+    color:#666;
+    font-size: 1.4rem;
+    border-right: 1px solid #ddd;
+}
+.fans span:last-child{
+    border:none;
+}
+.fans span i{
+    float:left;
+    width: 38px;
+    height:22px;
+    background:pink;
+    margin-top:4px;
+    margin-left: 12px;
+}
+.fans span em,.fans span font{
+    display:block;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-right: 17px;
+}
+.fans span:nth-child(3) em,.fans span:nth-child(3) font{
+    padding-right: 0px;
+} 
+.fans span:first-child i{
+    background: url(../img/my_icon.png) no-repeat 10px 0px;
+    background-size: 140px 137px;
+}
+.fans span:nth-child(2) i{
+    background: url(../img/my_icon.png) no-repeat -25px 0px;
+    background-size: 140px 137px;
+}
+.fans span:nth-child(3) i{
+    background: url(../img/my_icon.png) no-repeat -61px 0px;
+    background-size: 140px 137px;
+}
+.module_box{
+    background:white;
+    margin-bottom: 10px;
+}
+.module_box:last-child{
+    margin-bottom: 55px;
+
+}
+.module{
+    width:100%;
+    color:#333;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.module li{
+    width:25%;
+    float:left;
+    height: 74px;
+}
+.module li a{
+    color:#333;
+    font-size: 1.3rem;
+}
+.module li i{
+    display: block;
+    width:36px;
+    height:24px;
+    margin:auto;
+    margin-bottom:7px;
+    margin-top:16px;
+}
+/* 我的加盟 */
+.my_join li:first-child i{
+    background: url(../img/my_icon.png) no-repeat 7px -27px;
+    background-size: 140px 137px;
+}
+.my_join li:nth-child(2) i{
+    background: url(../img/my_icon.png) no-repeat -27px -27px;
+    background-size: 140px 137px;
+}
+.my_join li:last-child i{
+    background: url(../img/my_icon.png) no-repeat -68px -27px;
+    background-size: 140px 137px;
+}
+/* 结算中心 */
+.settlement li:first-child i{
+    background: url(../img/my_icon.png) no-repeat 7px -56px;
+    background-size: 140px 137px;
+}
+.settlement li:nth-child(2) i{
+    background: url(../img/my_icon.png) no-repeat -27px -56px;
+    background-size: 140px 137px;
+}
+.settlement li:nth-child(3) i{
+    background: url(../img/my_icon.png) no-repeat -60px -56px;
+    background-size: 140px 137px;
+}
+.settlement li:last-child i{
+    background: url(../img/my_icon.png) no-repeat -106px -56px;
+    background-size: 140px 137px;
+}
+/* 我的订单 */
+.my_order li:first-child i{
+    background: url(../img/my_icon.png) no-repeat 7px -84px;
+    background-size: 140px 137px;
+}
+.my_order li:nth-child(2) i{
+    background: url(../img/my_icon.png) no-repeat -23px -84px;
+    background-size: 140px 137px;
+}
+.my_order li:nth-child(3) i{
+    background: url(../img/my_icon.png) no-repeat -66px -82px;
+    background-size: 140px 137px;
+}
+.my_order li:last-child i{
+    background: url(../img/my_icon.png) no-repeat -106px -84px;
+    background-size: 140px 137px;
+} 
+.my_order .common_title{
+    padding-right:12px;
+}
+.my_order em a{
+    color:#999999;
+    font-size: 1.1rem;
+    float:right;
+}
+/* 我要合作 */
+.cooperation li:first-child i{
+    background: url(../img/my_icon.png) no-repeat 6px -113px;
+    background-size: 140px 137px;
+}
+.cooperation li:nth-child(2) i{
+    background: url(../img/my_icon.png) no-repeat -26px -113px;
+    background-size: 140px 137px;
+}
+/* 服务工具 */
+.serviceTool li:first-child i{
+    background: url(../img/my_icon.png) no-repeat -61px -113px;
+    background-size: 140px 137px;
+}

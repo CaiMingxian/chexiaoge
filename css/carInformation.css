@@ -1,0 +1,1003 @@
+/*车辆信息页面*/
+.photo{
+    width: 100%;
+    height: 230px;
+}
+.photo img{
+    width: 80%;
+    height:200px;
+    margin:15px 10%;
+}
+.unit_insure{
+    display:none;
+}
+.cI_ul li label{
+    display:inline-block;
+    width:100%;
+    height:100%;
+}
+.cI_ul li span{
+    text-align: left;
+    width: 25%;
+}
+.cI_ul li{
+    position:relative;
+}
+.cI_ul li input[type="text"]{
+    width: 73%;
+    text-align: right;
+    padding-right:10px;
+    float:left;
+}
+#showGeneral .carBrand{
+    width: 20%;
+    color: #010101;
+    font-size: 1.5rem;
+    padding-left:10px;
+}
+#showGeneral .car_number{
+    width: 53%;
+    right:10px;
+    color: #bbb;
+    font-size: 1.5rem;
+}
+.vehiclenews .cI_ul li input[type="text"]{
+    text-align: left;
+}
+.cI_ul li em{
+    width: 42px;
+    height: 20px;
+    display: inline-block;
+    margin: 15px 0;
+    float: right;
+    line-height: 20px;
+    position: relative;
+}
+.common_title em{
+    width: 42px;
+    height: 20px;
+    display: inline-block;
+    margin: 12px 10px 13px 15px;
+    float: right;
+    line-height: 20px;
+    position: relative;
+}
+.common_title span{
+    float:right;
+    color:#b8b8b8;
+    font-size: 1.4rem;
+}
+[id^="checkbox-"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+[id^="checkbox-"] + .check {
+    overflow: hidden;
+}
+[id^="checkbox-"] + .check {
+    padding: 6px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 8px;
+}
+[id^="checkbox-"] + .check:after, [id^="checkbox-"] + .check:before {
+    -webkit-transition: all 0.18s ease-in;
+    transition: all 0.18s ease-in;
+}
+[id^="checkbox-"] + .check:before {
+    content: '';
+    position: absolute;
+    background: white;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5), inset 0 -18px 15px -10px rgba(0,0,0,0.05);
+}
+[id^="checkbox-"]:checked + .check:before {
+    content: ' ';
+    position: absolute;
+    left: 24px;
+    border-radius: 50%;
+}
+.btn_kefu{
+    color: #333;
+    font-size: 1.8rem;
+    background: white;
+    line-height: 50px;
+    height: 48px;
+    width: 91.6%;
+    text-align: center;
+    margin: 10px 4.2% 34px 4.2%;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+[id^="checkbox-"]:checked + .check:after {
+    content: ' ';
+    font-size: 1.5em;
+    position: absolute;
+    background: #008bfe;
+}
+[id^="checkbox-"] + .check:after, [id^="checkbox-"] + .check:before {
+    -webkit-transition: all 0.18s ease-in;
+    transition: all 0.18s ease-in;
+}
+[id^="checkbox-"] + .check:after {
+    content: ' ';
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    box-shadow: inset 0 0 18px rgba(0,0,0,0.2);
+}
+.btn_kefu i{
+    padding-right: 8px;
+    width:18px;
+    display:inline-block;
+    vertical-align: middle;
+}
+.btn_kefu i img{
+    width:18px;
+    height:18px;
+}
+.change_tip{
+    width: 100%;
+    background:#fdfef0;
+}
+.change_tip{
+    color:#ff3535;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    padding:15px 12px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.change_tip span{
+    width: 15px;
+    height:15px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 1.3rem;
+    display:inline-block;
+    color:white;
+    background:#ff3535;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.cI_ul li .span_w{
+    width:29%;
+}
+/*车辆信息页面弹窗效果*/
+.toubao_beitoubao_box{
+    display:none;
+    margin:0 0 10px;
+}
+.toubao_beitoubao_box .common_title font{
+    border:none;
+    padding-left:0;
+}
+.jigouleixing_box,.zuoweishu_box{
+    display:none;
+}
+.effect_bg{
+    width: 100%;
+    position:fixed;
+    top:0;
+    bottom:0;
+    z-index: 4;
+    max-width:640px;
+    min-width:300px;
+    background:rgba(1,1,1,.4);
+    margin:0 auto;
+}
+.jigouleixing{
+    width: 82%;
+    max-width:456px;
+    min-width:246px;
+    position:fixed;
+    top:50%;
+    margin:0 9%;
+    border-radius: 2px;
+    z-index: 5;
+    background:white;
+    padding:20px 8.3%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.ef_title_common{
+    width: 100%;
+    max-width:640px;
+    min-width:300px;
+    position:fixed;
+    bottom:0;
+    z-index: 5;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.zuoweishu{
+    padding-bottom: 30px;
+    background:#f2f2f2;
+}
+.ef_title_common p{
+    height:47px;
+    line-height: 47px;
+    background:#eff6fd;
+    color:#333;
+    font-size: 1.6rem;
+}
+.ef_title_common p span{
+    position:absolute;
+    right:0;
+    top:0;
+    color:#0490f1;
+    font-size: 1.5rem;
+    width:15.33%;
+    display:inline-block;
+    height:47px;
+    line-height: 47px;
+}
+.zuoweishu .zuowei_tip{
+    display:inline-block;
+    color:#a4a4a5;
+    font-size: 1.2rem;
+    padding:0 12px;
+    line-height: 1.6rem;
+}
+.zuowei_num{
+    padding:30px 12px;
+    height:50px;
+    text-align: center;
+    position:relative;
+}
+.zuowei_num button{
+    color: #999999;
+    width: 50px;
+    height:50px;
+    color:white;
+    font-size: 2rem;
+    background: #008cff;
+    position:absolute;
+    z-index:1;
+    outline: none;
+}
+.zuowei_num .jian{
+    left:12px;
+    border-radius:5px 0 0 5px;
+}
+.zuowei_num .add{
+    right:12px;
+    border-radius:0 5px 5px 0;
+}
+.zuowei_num input{
+    width: 92%;
+    border: 0.01rem solid #d7d7d7;
+    color: #333;
+    font-size: 1.8rem;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    left:12px;
+    right:12px;
+    margin:0 auto;
+    position:absolute;
+    padding:0 60px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.jigouleixing ul li{
+    color:#131313;
+    font-size: 1.4rem;
+    padding:10px 0;
+    padding-left:28px;
+    position:relative;
+}
+.jigouleixing ul li i{
+    position:absolute;
+    left:0;
+    top:7px;
+    width:18px;
+    height: 18px;
+    display:inline-block;
+    border-radius: 50%;
+    border:1px solid #ddd;
+}
+.jigouleixing li i img{
+    width: 100%;
+    height:100%;
+    display:none;
+}
+.dwtb_callPhone{
+    width: 100%;
+    background:#f2f2f2;
+}   
+.dwtb_callPhone .dwtb_p{
+    width: 100%;
+    background:white;
+}
+.dwtb_callPhone .dwtb_p li input{
+    text-align: left;
+    color:black;
+}
+.contactWay_submit{
+    border-radius: 5px;
+}
+.contactWay_cancel{
+    border-radius: 5px;
+    color:#333;
+    background:white;
+    border:1px solid #cecece;
+}
+.carpai_box{
+    display:none;
+}
+.carpai_input{
+    background:#fff;
+}
+.carpai_input p{
+    background:#eee;
+}
+.car_in{
+    width: 100%;
+    padding:35px 0 42px;
+}
+.car_in input{
+    width: 70%;
+    padding:0 10px;
+    line-height: 40px;
+    height:40px;
+    border-radius: 7px;
+    margin:auto;
+    color:#333;
+    font-size: 1.5rem;
+    border:1px solid #ddd;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.1) inset,0px 0px 5px rgba(200,200,200,0);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.1) inset,0px 0px 5px rgba(200,200,200,0);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1) inset,0px 0px 5px rgba(200,200,200,0);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* 车辆信息页面日历效果 */
+.calendar_box{
+    display:none;
+}
+#schedule-box{
+    width: 100%;
+    margin:0 auto;
+    padding-bottom: 10px;
+    background:white; 
+    font-size: 13px;
+}
+.schedule-hd{
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 15px;
+}
+.today{
+    flex: 1;
+    text-align: center;
+    color:#6a6a6a;
+    font-weight: bold;
+}
+.ul-box{
+    overflow: hidden;
+}
+.ul-box > li{
+    float: left;
+    width: 14.28%;
+    text-align: center;
+    padding-top:5px;
+}
+.other-month{
+    color: #999999;
+}
+.current-month{
+    color: #333333;
+}
+.today-style{
+    border-radius: 50%;
+    background: #58d321;
+}
+.arrow{
+    cursor: pointer;
+}
+.dayStyle{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+}
+.current-month > .dayStyle:hover{
+    background: #00BDFF;
+    color: #ffffff;
+}
+.today-flag{
+    background: rgba(0, 140, 255, 0.9); 
+    /*background:#008cff;*/
+    color: #fff;
+}
+.selected-style {
+    background: #00BDFF;
+    color: #ffffff;
+}
+#h3Ele{
+    text-align: left;
+    padding: 10px;
+}
+.calendar_title{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    background:#008cff;
+    color:#fff;
+    font-family: "微软雅黑";
+}
+.calendar_title p{
+    background: #0184f0;
+    font-size: 1.3rem;
+    padding:8px 0 8px;
+}
+.calendar_title span{
+    display:block;
+}
+.calendar_title span:first-child{
+    padding:6px 0;
+    color:#c8e5fd;
+    font-size: 2.2rem;
+}
+.calendar_title span:nth-child(2){
+    color:#fff;
+    font-size: 2.2rem;
+    padding-bottom: 4px;
+}
+.calendar_title span:last-child{
+    color:#fff;
+    font-size: 7.5rem;
+    padding-bottom: 2px;
+}
+.calendar_main{
+    width: 72%;
+    height:394px;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    position: fixed;
+    margin:auto;
+    z-index: 5;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#prevYear{
+    background:url(../img/rili.png) no-repeat 3px 1px;
+    background-size: 45px 10px;
+}
+#nextYear{
+    background:url(../img/rili.png) no-repeat -32px 1px;
+    background-size: 45px 10px;
+}
+#prevMonth{
+    background:url(../img/rili.png) no-repeat -9px 1px;
+    background-size: 45px 10px;
+}
+#nextMonth{
+    background:url(../img/rili.png) no-repeat -20px 1px;
+    background-size: 45px 10px;
+} 
+.iconfont{
+    width:16px;
+    height: 16px;
+    display:inline-block;
+}
+/* 投保方案页面 */
+.insurance_ul{
+    line-height: 54px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.insurance_ul li{
+    width: 100%;
+    height: 50px;
+    background: white;
+    border-bottom: 1px solid #eaeaea;
+    padding:0 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.insurance_ul li:last-child{
+    border: none;
+}
+.carloss li:last-child{
+    border-bottom: 1px solid #eaeaea;
+}
+.insurance_ul li span{
+    color: #333333;
+    font-size: 1.4rem;
+    display: inline-block;
+    text-align: left;
+    height: 100%;
+}
+.insurance_ul li i{
+    width: 6px;
+    height: 13px;
+    display: inline-block;
+    background: url(../img/go_r.png) no-repeat 0px 0px;
+    background-size: contain;
+    border: 1px solid transparent;
+    float: right;
+    margin-top: 18px;
+}
+.insurance_ul li .check_em{
+    width: 42px;
+    height: 20px;
+    display: inline-block;
+    margin: 15px 0 15px 15px;
+    float: right; 
+    line-height: 20px;
+    position: relative;
+}
+.insurance_ul li .small_t{
+    color: #bababa;
+    font-size: 1.1rem;
+}
+.insurance_ul li .gray_em{
+    color:#848484;
+    font-size: 1.1rem;
+    padding:3px 13px 3px 9px;
+    border:2px solid #c4c4c4;
+    border-radius: 5px 5px 0 5px;
+    position:relative;
+}
+.insurance_ul li .gray_em s{
+    display:inline-block;
+    width: 20px;
+    height: 18px;
+    position:absolute;
+    right:-1px;
+    bottom:0;
+    background:url(../img/gou.png) no-repeat -23px 2px;
+    background-size: 84px 16.5px;
+}
+.insurance_ul li .active_em{
+    color:#ff5353;
+    font-size: 1.1rem;
+    padding:3px 13px 3px 9px;
+    border:2px solid #ff5353;
+    border-radius: 5px 5px 0 5px;
+    position:relative;
+}
+.insurance_ul li .active_em s{
+    display:inline-block;
+    width: 20px;
+    height: 18px;
+    position:absolute;
+    right:-1px;
+    bottom:0;
+    background:url(../img/gou.png) no-repeat 1px 2px;
+    background-size: 84px 16.5px;
+}
+.insurance_ul li label{
+    display:inline-block;
+}
+.insurance_ul li .label_pei{
+     float:right;
+}
+.insurance_ul li .label{
+    width:100%;
+    height:100%;
+}
+.insure_city li:first-child{
+    margin-bottom: 10px;
+    border:none;
+}
+.strong_insurance li:last-child{
+    margin-bottom: 10px;
+    border:none;
+}
+.insurance_ul li input[type=text] {
+    float:right;
+    max-width: 30%;
+    text-align: right;
+    color:#333;
+    font-size: 1.4rem;
+    line-height:50px;
+    padding-right:10px;
+    background:transparent;
+}
+/*投保方案页面弹窗效果*/
+.glass_box{
+    background:white;
+}
+.glass_box p{
+    padding:0 12px;
+    height:38px;
+    line-height: 38px;
+    color:#999;
+    font-size: 1.4rem;
+    background:#efefef;
+}
+.glass_box li{
+    width: 100%;
+    height: 45px;
+    padding:0 12px;
+    line-height: 45px;
+    color:#333;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.glass_box li span{
+    display:inline-block;
+    width: 100%;
+    height:45px;
+    
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.glass_box .active_toubao{
+    color:white;
+    background:rgba(0, 140, 255, 0.5);
+}
+/* 保险询价页面 */
+.modify_news{
+    height:45px;
+    width:100%;
+    background:white;
+    color: #424242;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding:15px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+.modify_news li{
+    width:50%;
+    float:left;
+    background:white;
+}
+.modify_news li:first-child{
+    border-right:1px solid #ddd;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+
+.progress_bar{
+    padding:0 12px;
+    line-height: 50px;
+    background:white;
+    margin-bottom: 10px;
+}
+.progress_bar li{
+    width:100%;
+}
+.progress_bar li:first-child{
+    border-bottom: 1px solid #eaeaea;
+}
+.progress_bar li{
+    color: #aaaaaa;
+    font-size: 1.2rem;
+}
+.progress_bar li em{
+    color:#f32f1f;
+    font-size: 1.2rem;
+}
+.progress_bar li span:first-child{
+    display:inline-block;
+    max-width:24%;
+    color: #333333;
+    font-size: 1.4rem;
+}
+.progress_bar li .pro_span{
+    width: 59.5%;
+    height:11px;
+    border-radius: 15px;
+    display:inline-block;
+    position:relative;
+    line-height:50px;
+} 
+ .progress_bar li .pro_span i{
+    border-radius: 15px;
+    display:inline-block;
+    width: 100%;
+    height:11px;
+    background:#ff4030;
+    position:absolute;
+    left:0;
+    top:0;
+} 
+.progress_bar li .pro_em{
+    display:inline-block;
+    max-width:23%;
+    color: #aaaaaa;
+    font-size: 1rem;
+    float:right;
+    text-align: center;
+}
+@media screen and (max-width: 375px) {
+    .progress_bar li .pro_span{
+        width: 59.5%;
+        height:11px;
+        border-radius: 15px;
+        display:inline-block;
+        position:relative;
+        line-height:50px;
+    }
+}
+@media screen and (max-width: 320px) {
+
+    .progress_bar li .pro_span{
+        width: 52%;
+        height:11px;
+        border-radius: 15px;
+        display:inline-block;
+        position:relative;
+        line-height:50px;
+    } 
+}
+.oter_but{
+    margin-bottom: 0;
+}
+.inquiry_ul li{
+    margin-bottom: 10px;
+}
+.inquiry_ul li:last-child{
+    margin-bottom: 0;
+}
+.buy_insurance{
+    padding:0 12px;
+}
+.buy_insurance{
+    background:white;
+    margin-bottom: 10px;
+}
+.buy_main{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    border-bottom: 1px solid #eaeaea;
+}
+.buy_main .buy_title{
+    display:inline-block;
+    width:27.85%;
+    color: #333333;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.buy_main .buy_money{
+    display:inline-block;
+    width:24.28%;
+    color: #008bfe;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.buy_main em{
+    padding:3px 7px;
+    border:1px solid #fd9a35;
+    border-radius: 15px;
+    color: #fd9a35;
+    font-size: 0.9rem;
+}
+.buy_main .buy_now{
+    padding:0px 6px; 
+    height:25px;
+    line-height: 26px; 
+    display:inline-block;
+    border-radius: 5px;
+    background:#008bfe;
+    margin-top:12px;
+    float:right;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+.buy_details{
+    height: 42px;
+    line-height: 42px;
+    color: #aaaaaa;
+    font-size: 1rem;
+}
+.buy_details i{
+    width:16px;
+    height:14px;
+    vertical-align: middle;
+    display:inline-block;
+    background:url(../img/gou.png) no-repeat -50px 0px;
+    background-size: 84px 16.5px;
+    margin-right: 5px;
+}
+.inquiry_ul li i{
+    width: 12px;
+    height:8px;
+    background:url(../img/gou.png) no-repeat -71px -9px;
+    background-size: 84px 16.5px;
+    margin-top: 19px;
+}
+.inquiry_ul li i.inquiry_jiantou{
+    background:url(../img/gou.png) no-repeat -71px 0px;
+    background-size: 84px 16.5px;
+}
+.inquiry_ul li:first-child{
+    margin-bottom: 0;
+}
+.no_offer{
+    background:white;
+    padding:0 12px 0 12px;
+    margin-bottom: 10px;
+}
+.no_offer div{
+    width:100%;
+    padding-bottom: 18px;
+    display: inline-block;
+    border-top: 1px solid #eaeaea;
+}
+.no_offer div:first-child{
+    border-top:none;
+}
+.no_offer div h1{
+    height:48px;
+    line-height: 48px;
+    color: #333333;
+    font-size: 1.5rem;
+}
+.no_offer div span{
+    float:left;
+    color: #999;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+}
+/* 投保详情 */
+.insurance_cI li input[type="text"]{
+    text-align: left;
+}
+.ins_details{
+    background:white;
+    padding:30px 0 27px;
+}
+.ins_details p{
+    text-align: center;
+    color: #333333;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.ins_details h1{
+    text-align: center;
+    color: #008bfe;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.order_all{
+    background:white;
+    margin-bottom: 10px;
+}
+.order_box{
+    padding:5px 12px 0;
+}
+.order_box:last-child .order_main{
+    border-bottom: none;
+}
+.order_list{
+    border-bottom: 1px solid #eaeaea;
+}
+.order_list li{
+    width: 100%;
+    line-height: 33px;
+}
+.order_list li span,.order_list li em{
+    display:inline-block;
+    color: #999;
+    font-size: 1.3rem;
+}
+.order_list li span{
+    width: 27.7%;
+}
+.order_list li i{
+    display:inline-block;
+    color: #333333;
+    float:right;
+    font-size: 1.3rem;
+    font-style:normal;
+}
+.order_main{
+    height:43px;
+    line-height: 43px;
+    border-bottom:1px solid #eaeaea;
+}
+.order_main span,.order_main em{
+    float:right;
+}
+.order_main em{
+    padding: 3px 7px;
+    border: 1px solid #fd9a35;
+    border-radius: 15px;
+    color: #fd9a35;
+    font-size: 0.9rem;
+    margin-top:10px;
+    line-height: 16px;
+}
+.order_main .order_money{
+    color: #008bfe;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.order_main .buy_title{
+    color: #333333;
+    font-size: 1.3rem;
+    padding-right: 5px;
+    padding-left:15px;
+}
+.insurance_type{
+    margin-bottom: 10px;
+    padding:0 12px;
+    background:white;
+}
+.insurance_type li{
+    line-height: 55px;
+    border-bottom: 1px solid #eaeaea;
+    color: #333333;
+    font-size: 1.6rem;
+}
+.insurance_type li:last-child{
+    border:none;
+}
+.car_news li:nth-last-of-type(2) span{
+    width:29%;
+}
+.car_news li:nth-last-of-type(2) input{
+    width:68%;
+}
+.car_news li:last-child span{
+    width:44%;
+}
+.tijiao_tip{
+    padding:5px 12px 0 12px;
+    color: #999999;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.1rem;
+}
+/* 投保结果 */
+.insure_result{
+    width:100%;
+    margin-top:40%;
+}
+.insure_result i{
+    width: 18%;
+    display:inline-block;
+    padding-bottom: 18%;
+    height:0; 
+    position:relative;
+    margin:0 41%;
+}
+.insure_result i img{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.insure_result p{
+    color: #999999;
+    font-size: 1rem;
+    text-align: center;
+    padding:25px 12px 0 12px;
+}

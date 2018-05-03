@@ -1,0 +1,168 @@
+.fengmian{
+    width:100%;
+    height:120px;
+    padding:15px 12px;
+    float: left;
+    background:#008bfe;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+.shopLogo{
+    width: 34.28%;
+    max-width:120px;
+    height:100%;
+    position:relative;
+    background:pink;
+    float:left;
+    overflow: hidden;
+    border: 3px solid #f4f4f4;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+.shopLogo img{
+    width: 100%;
+    margin: auto;
+    min-height: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*@media screen and (min-width:300px) and (max-width:358px){
+    .shopLogo{
+        width: 34.28%;
+        max-width:120px;
+        margin:22px 0;
+        padding-bottom: 25.71%;
+        height:0;
+        position:relative;
+        background:pink;
+        float:left;
+    }
+}*/
+.fm_details{
+    width:65.72%;
+    height: 100%;
+    float:left;
+    color:white;
+    padding-left:15px;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+.fm_details p{
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom: 11px;
+}
+.fm_details .fans{
+    font-size: 1.1rem;
+}
+.fm_details .visit{
+    font-size: 1.1rem;
+    display:inline-block;
+    margin-left: 8%;
+}
+.shopImg {
+    width:100%;
+    padding-top:9px;
+    height:36px;
+}
+.shopImg span{
+    width:21.72%;
+    height:100%;
+    margin-right:5%;
+    float:left;
+    display:inline-block;
+    border:2px solid #fff;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+.shopImg span img{
+    width: 100%;
+    height:100%;
+}
+.shopImg .moreImg{
+    width:19.84%;
+    margin-right:0;
+    border:none;
+}
+.shopImg .moreImg em{
+    width:6px;
+    height:6px;
+    background:white;
+    border-radius: 50%;
+    float:left;
+    margin:15px 2px;
+}
+.goods_list{
+    width: 100%;
+}
+.goods_fu{
+    background: white;
+    width: 49.3%;
+    float: left;
+    margin-top: 5px;
+}
+.goods_fu:nth-child(even){
+    float: right;
+}
+.goods_fu i{
+    width: 100%;
+    padding-bottom: 100%;
+    height: 0px;
+    display: inline-block;
+    position:relative;
+}
+.goods_fu i img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.goods_fu p{
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    color:#333;
+    padding:15px 13px 11px 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.price{
+    width:100%;
+    padding-bottom: 15px;
+    background:white;
+
+}
+.goods_fu .marketPrice{
+    width:50%;
+    float:left;
+    display:inline-block;
+    font-size: 1.4rem;
+    color:#ff6600;
+    padding-left: 13px;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+.goods_fu .marketPrice em{
+    font-size: 1rem;
+}
+.goods_fu .originalPrice{
+    width:50%;
+    float:left;
+    text-decoration: line-through;
+    display:inline-block;
+    font-size: 1rem;
+    line-height:1.4rem;
+    color:#a9a9a9;
+}

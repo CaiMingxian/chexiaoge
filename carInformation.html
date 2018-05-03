@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>车辆信息</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/carInformation.css" />
+        <link rel="stylesheet" href="css/iosSelect.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/carInformation.js"></script>
+        <script type="text/javascript" src="js/iosSelect.js"></script>
+        <script type="text/javascript" src="js/carData.js"></script>
+        <script type="text/javascript" src="js/schedule.js"></script>
+    </head>
+    <body style="background: #f2f2f2;">
+        <div class="common_box">
+            <div class="common_header clearfix">
+                <a href="javascript:history.go(-1)"><img src="img/back_l.png"/></a>
+                <p>车辆信息</p>
+            </div>
+            <div class="photo">
+                <img src="img/photo.png"/>
+            </div>
+            <div class="vehiclenews">
+                <div class="common_title_box license_plate">
+                    <div class="common_title"><font>车辆信息</font></div>
+                    <ul class="cI_ul">
+                        <li id="showGeneral"><span>车牌：</span>
+                        <strong class="carBrand"></strong><strong class="car_number"></strong>
+                        <input type="hidden" name="su_id" id="suId" value="">
+                        <input type="hidden" name="wei_id" id="weiId" value="">
+                        <i></i></li>
+                        <li id="register_time"><span>注册日期：</span><input type="text" placeholder="" id='h3Ele' readonly="readonly"/><i></i></li>
+                        <li><span>品牌型号：</span><input type="text" placeholder=""/></li>
+                        <li><span>车架号：</span><input type="text" placeholder=""/></li>
+                        <li><span>发动机号：</span><input type="text" placeholder=""/></li>
+                        <li><span>车型：</span><input type="text" placeholder="" readonly="readonly"/><i></i></li>
+                        <li><span>座位数：</span><input type="text" placeholder="" readonly="readonly"/><i></i></li>
+                        <li><label for="checkbox-1"><span class="span_w">一年内过户：</span><em><input type="checkbox" id="checkbox-1" /><b class="check"></b></em></label></li>
+                    </ul>
+                </div>
+                <div class="common_title_box carOwner_news">
+                    <div class="common_title"><font>车主信息</font><label for="checkbox-2"><em><input type="checkbox" id="checkbox-2" /><b class="check"></b></em><span>同为投保人被保人</span></label></div>
+                    <ul class="cI_ul">
+                        <li><span>姓名：</span><input type="text" placeholder=""/></li>
+                        <li><span>手机号：</span><input type="text" placeholder=""/></li>
+                        <li><span>地址：</span><input type="text" placeholder=""/></li>
+                        <li><span>身份证：</span><input type="text" placeholder="" readonly="readonly" /><i></i></li>
+                    </ul>
+                </div>
+                <div class="toubao_beitoubao_box">
+                    <div class="common_title_box">
+                        <div class="common_title"><font>投保人信息</font><label for="checkbox-3"><em><input type="checkbox" id="checkbox-3" /><b class="check"></b></em><span>单位投保</span></label></div>
+                        <ul class="cI_ul c_insure">
+                            <li><span>姓名：</span><input type="text" placeholder=""/></li>
+                            <li><span>手机号：</span><input type="text" placeholder=""/></li>
+                            <li><span>地址：</span><input type="text" placeholder=""/></li>
+                            <li><span>身份证：</span><input type="text" placeholder="" readonly="readonly" /><i></i></li>
+                        </ul>
+                        <ul class="cI_ul unit_insure">
+                            <li><span>社会代码：</span><input type="text" placeholder=""/></li>
+                            <li><span>机构名称：</span><input type="text" placeholder=""/></li>
+                            <li><span>机构类型：</span><input type="text" placeholder="" readonly="readonly" /><i></i></li>
+                            <li><a href="contactWay.html"><span>联系方式：</span><input type="text" placeholder="" readonly="readonly" /><i></i></a></li>
+                            <li><a href="invoiceInformation.html"><span>发票信息：</span><input type="text" placeholder="" readonly="readonly" /><i></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="common_title_box">
+                        <div class="common_title"><font>被投保人信息</font></div>
+                        <ul class="cI_ul">
+                            <li><span>姓名：</span><input type="text" placeholder=""/></li>
+                            <li><span>手机号：</span><input type="text" placeholder=""/></li>
+                            <li><span>地址：</span><input type="text" placeholder=""/></li>
+                            <li><span>身份证：</span><input type="text" placeholder="" readonly="readonly" /><i></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="change_tip">
+                <span>!</span>投保人和被保险人相关信息如需修改，需当事人前往保险公司当面申请，请谨慎录入信息！
+            </div>
+            
+            <a href="insurancePolicy.html"><input type="button" class="button" value="下一步"></a>
+            <div class="btn_kefu"><i><img src="img/kefu.png"/></i>客服</div>
+            
+            <!-- 单位投保-机构类型 -->
+            <div class="jigouleixing_box">
+                <div class="effect_bg"></div>
+                <div class="jigouleixing">
+                    <ul>
+                        <li><i><img src="img/ok.png" alt="" /></i><em>机关法人</em></li>
+                        <li><i><img src="img/ok.png" alt="" /></i><em>企业法人</em></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 座位号选择 -->
+            <div class="zuoweishu_box">
+                <div class="effect_bg"></div>
+                <div class="ef_title_common zuoweishu">
+                    <p>请选择座位数<span>完成</span></p>
+                    <div class="zuowei_num">
+                        <button class="jian">-</button>
+                        <input type="text" value="1"  onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"/>
+                        <button class="add">+</button>
+                    </div>
+                    <span class="zuowei_tip">小贴士：目前仅平安、太平洋支付修改座位数报价，不支持的险企按默认座位数报价</span>
+                </div>
+            </div>
+            <!-- 车牌号码弹窗 -->
+            <div class="carpai_box">
+                <div class="effect_bg"></div>
+                <div class="ef_title_common carpai_input">
+                    <p>请输入您的车牌号码<span>完成</span></p>
+                    <div class="car_in">
+                        <input type="text" maxlength="5" size="8"/>
+                    </div>
+                </div>
+            </div>
+            <!-- 注册日期弹窗 -->
+            <div class="calendar_box">
+                <div class="effect_bg"></div>
+                <div class="calendar_main" id="calendar_main">
+                    
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript">
+
+        var showGeneralDom = document.querySelector('#showGeneral');
+        var suIdDom = document.querySelector('#suId');
+        var weiIdDom = document.querySelector('#weiId');
+        showGeneralDom.addEventListener('click', function () {
+            var suId = showGeneralDom.dataset['su_id'];
+            var suValue = showGeneralDom.dataset['su_value'];
+            var weiId = showGeneralDom.dataset['wei_id'];
+            var weiValue = showGeneralDom.dataset['wei_value'];
+            var sanguoSelect = new IosSelect(2, 
+                [suData, weiData],
+                {
+                    title: '请选择车牌归属地',
+                    itemHeight: 35, // 每个元素的高度
+                    itemShowCount: 5, // 每一列显示元素个数，超出将隐藏
+                    oneLevelId: suId,
+                    twoLevelId: weiId,
+                    callback: function (selectOneObj, selectTwoObj) {
+                        suIdDom.value = selectOneObj.id;
+                        weiIdDom.value = selectTwoObj.id;
+                        showGeneralDom.innerHTML = `<span>车牌：</span><strong class="carBrand">${selectOneObj.value}&nbsp;${selectTwoObj.value}</strong><strong class="car_number"> > </strong>
+                    <input type="hidden" name="su_id" id="suId" value=""> 
+                    <input type="hidden" name="wei_id" id="weiId" value="">
+                    <i></i>`;
+
+                        showGeneralDom.dataset['su_id'] = selectOneObj.id;
+                        showGeneralDom.dataset['su_value'] = selectOneObj.value;
+                        showGeneralDom.dataset['wei_id'] = selectTwoObj.id;
+                        showGeneralDom.dataset['wei_value'] = selectTwoObj.value;
+                    }
+            });
+        });
+
+        var mySchedule = new Schedule({
+            el: '#calendar_main',
+            //date: '2018-9-20',
+            clickCb: function (y,m,d) {
+                document.querySelector('#h3Ele').value = y+'-'+m+'-'+d;   
+            },
+            nextMonthCb: function (y,m,d) {
+                document.querySelector('#h3Ele').value = y+'-'+m+'-'+d    
+            },
+            nextYeayCb: function (y,m,d) {
+                document.querySelector('#h3Ele').value = y+'-'+m+'-'+d    
+            },
+            prevMonthCb: function (y,m,d) {
+                document.querySelector('#h3Ele').value = y+'-'+m+'-'+d    
+            },
+            prevYearCb: function (y,m,d) {
+                document.querySelector('#h3Ele').value = y+'-'+m+'-'+d    
+            }
+        });
+    </script>
+    </body>
+</html>

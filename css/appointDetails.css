@@ -1,0 +1,101 @@
+.yuyue{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:7px 12px;
+    color:#333;
+    font-size: 1.4rem;
+    background:white;
+}
+.yuyue li{
+    padding:7px 0;
+}
+.yuyue li:nth-child(2){
+    line-height: 1.7rem;
+    padding:4px 0;
+}
+.by_project{
+    background:white;
+    padding:4px 12px 0 12px;
+}
+.by_project p{
+    color:#ff6c00;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding:11px 0;
+    font-family: "微软雅黑";
+}
+.by_project table{
+    width:100%;
+}
+.by_project table td{
+    color:#333;
+    font-size: 1.2rem;
+    border:1px solid #e2e2e2;
+    padding:13px 0;
+    text-align: center;
+    vertical-align:middle;
+}
+.by_project table td:first-child{
+    width: 24.46%;
+}
+.by_project table td:nth-child(2){
+    line-height: 1.4rem;
+    padding:13px 12px;
+    text-align: left;
+    width: 57.87%;
+}
+.by_project table td:last-child{
+    color:#999999;
+    width: 18.19%;
+}
+.countMoney{
+    height:45px;
+    line-height: 45px;
+}
+.countMoney{
+    float:right;
+}
+.countMoney em{
+    color:#333333;
+    font-size: 1.2rem;
+}
+.countMoney span{
+    color:#ff6c00;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.shouldPay{
+    background:white;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 50px;
+    line-height: 50px;
+    max-width:640px;
+    min-width:300px;
+    margin:auto;
+    border-top:1px solid #ddd;
+}
+.shouldPay{
+    font-size: 1.8rem;
+}
+.shouldPay em{
+    color:#333333;
+    font-size: 1.4rem;
+    float:right;
+}
+.shouldPay span{
+    color:#ff6c00;
+    float:right;
+    padding-right: 14px;
+}
+.shouldPay div{
+    height:50px;
+    line-height: 50px;
+    width: 40%;
+    background: #ff6c00;
+    color:white;
+    text-align: center;
+    float:right;
+}

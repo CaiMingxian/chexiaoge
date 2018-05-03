@@ -1,0 +1,155 @@
+.yingJiang{
+    padding:12px 12px;
+    background:white;
+    margin-bottom: 10px;
+}
+.yingJiang li{
+    width:27.5%;
+    float:left;
+    text-align: center;
+}
+.yingJiang li span{
+    width: 100%;
+    color: #0376d7;
+    font-size: 1.5rem;
+    display:inline-block;
+    font-weight: bold;
+    padding-bottom: 16px;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.yingJiang li em{
+    color: #333333;
+    font-size: 1.1rem;
+}
+.yingJiang li:last-child{
+    width:15.5%;
+    max-width:56px;
+    padding-right:0;
+    background: #0376d7;
+    border-radius: 14px;
+    float: right;
+    margin-left: 0.05rem;
+}
+.yingJiang li:last-child a{
+    color: white;
+    font-size: 0.12rem;
+    display: inline-block;
+    padding: 0px 10px 10px;
+    padding-top: 0px;
+    margin-top:10px;
+    font-size: 1.2rem;
+}
+.mS{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+/*shop_common（我的店铺，服务分类）公共样式名*/
+.shop_common{
+    width:100%;
+    padding:0 12px;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+.shop_common li{
+    padding:20px 0 19px 0;
+    width: 25%;
+    float:left;
+    text-align: center;
+}
+.shop_common li i{
+    display:block;
+    width:29px;
+    height:26px;
+    margin:auto;
+    margin-bottom: 11px;
+}
+.shop_common li em{
+    display:block;
+    width: 100%;
+    color: #333333;
+    font-size: 1.2rem;
+}
+.merchant a:first-child i{
+    background: url(../img/shop.png) no-repeat 2px 0px;
+    background-size: 126px 57.5px;
+}
+.merchant a:nth-child(2) i{
+    background: url(../img/shop.png) no-repeat -30px 0px;
+    background-size: 126px 57.5px;
+}
+.merchant a:nth-child(3) i{
+    background: url(../img/shop.png) no-repeat -62px 0px;
+    background-size: 126px 57.5px;
+}
+.commodity a:first-child i{
+    background: url(../img/shop.png) no-repeat -95px 0px;
+    background-size: 126px 57.5px;
+}
+.commodity a:nth-child(2) i{
+    background: url(../img/shop.png) no-repeat 4px -29px;
+    background-size: 126px 57.5px;
+}
+.commodity a:nth-child(3) i{
+    background: url(../img/shop.png) no-repeat -30px -29px;
+    background-size: 126px 57.5px;
+}
+.commodity a:last-child i{
+    background: url(../img/shop.png) no-repeat -63px -29px;
+    background-size: 126px 57.5px;
+}
+.order a:first-child i{
+    background: url(../img/shop.png) no-repeat -92px -28px;
+    background-size: 126px 57.5px;
+}
+/*服务分类页面*/
+.classify_box{
+    padding-top:13px;
+    margin-bottom: 0;
+}
+.classify_box .common_title{
+    font-weight: normal;
+    border-bottom: none;
+}
+.classify_box ul li{
+    color:#333;
+    font-size: 1.4rem;
+}
+.classify_box li i{
+    width:30px;
+}
+.maintain_map li:first-child i{
+    background: url(../img/map_s.png) no-repeat 0px 0px;
+    background-size: 128px 55.5px;
+}
+.maintain_map li:nth-child(2) i{
+    background: url(../img/map_s.png) no-repeat -34px 0px;
+    background-size: 128px 55.5px;
+}
+.maintain_map li:nth-child(3) i{
+    background: url(../img/map_s.png) no-repeat -64px 0px;
+    background-size: 128px 55.5px;
+}
+.rescue_map li:first-child i{
+    background: url(../img/map_s.png) no-repeat -98px 3px;
+    background-size: 128px 55.5px;
+}
+.rescue_map li:nth-child(2) i{
+    background: url(../img/map_s.png) no-repeat 4px -29px;
+    background-size: 128px 55.5px;
+}
+.rescue_map li:nth-child(3) i{
+    background: url(../img/map_s.png) no-repeat -28px -29px;
+    background-size: 128px 55.5px;
+}
+.rescue_map li:nth-child(4) i{
+    background: url(../img/map_s.png) no-repeat -62px -29px;
+    background-size: 128px 55.5px;
+}
+.rescue_map li:last-child i{
+    background: url(../img/map_s.png) no-repeat -93px -29px;
+    background-size: 128px 55.5px;
+}
+

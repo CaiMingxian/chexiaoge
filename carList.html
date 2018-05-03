@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>汽车列表</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/takeGoods.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/carList.js"></script>
+
+    </head>
+    <body style="background: #f2f2f2;">
+        <div class="common_box">
+            <div class="common_header carlist_header clearfix">
+                <a href="javascript:history.go(-1)"><img src="img/back_l.png"/></a>
+                <p>汽车列表</p>
+                <span><img src="img/search.png" alt="" /></span>
+            </div>
+            <nav class="filter-nav">
+                <span>智能排序<img src="img/down_a.png" alt="" /></span>
+                <span>品牌<img src="img/down_a.png" alt="" /></span>
+                <span>价格<img src="img/down_a.png" alt="" /></span>
+                <span>筛选<img src="img/down_a.png" alt="" /></span>
+                <span><em>新能源</em></span>
+            </nav>
+
+            <div class="intelligence_box sort_box">
+                <div class="intelligence_bg sort_bg"></div>
+                <ul class="intelligence">
+                    <li>智能排序</li>
+                    <li>最新上架</li>
+                    <li>价格最高</li>
+                    <li>价格最低</li>
+                </ul>
+            </div>
+
+            <div class="carprice_box sort_box">
+                <div class="carprice_bg sort_bg"></div>
+                <ul class="carprice clearfix">
+                    <li>不限</li>
+                    <li>5万以下</li>
+                    <li>5-8万</li>
+                    <li>8-10万</li>
+                    <li>10-12万</li>
+                    <li>12-14万</li>
+                    <li>14-16万</li>
+                    <li>16-18万</li>
+                    <li>18-22万</li>
+                    <li>22-26万</li>
+                    <li>26-30万</li>
+                    <li>30万以上</li>
+                </ul>
+            </div>
+
+            <div class="carListscreen_box">
+                <div class="filter-main">
+                    <h1>级别</h1>
+                    <ul class="carListscreen clearfix">
+                        <li><i><img src="img/carlist1.png" alt="" /></i>两厢轿车</li>
+                        <li><i><img src="img/carlist2.png" alt="" /></i>小型车</li>
+                        <li><i><img src="img/carlist3.png" alt="" /></i>紧凑型车</li>
+                        <li><i><img src="img/carlist1.png" alt="" /></i>中型车</li>
+                        <li><i><img src="img/carlist1.png" alt="" /></i>中大型车</li>
+                        <li><i><img src="img/carlist1.png" alt="" /></i>大型车</li>
+                        <li><i><img src="img/carlist1.png" alt="" /></i>跑车</li>
+                        <li><i><img src="img/carlist1.png" alt="" /></i>SUV</li>
+                        <li><i><img src="img/carlist1.png" alt="" /></i>MVP</li>
+                        <li><i><img src="img/carlist2.png" alt="" /></i>皮卡</li>
+                        <li><i><img src="img/carlist3.png" alt="" /></i>微面</li>
+                        <li><i><img src="img/carlist1.png" alt="" /></i>轻客</li>
+                    </ul>
+                    <h1>排量</h1>
+                    <ul class="displacement car_screen_ul clearfix">
+                        <li><span class="active_touch">全部</span></li>
+                        <li><span>1.0L及以下</span></li>
+                        <li><span>1.1-1.6L</span></li>
+                        <li><span>1.7-2.0L</span></li>
+                        <li><span>2.1-2.5L</span></li>
+                        <li><span>2.6-3.0L</span></li>
+                        <li><span>3.1-4.0L</span></li>
+                        <li><span>4.0L以上</span></li>
+                    </ul>
+                    <h1>驱动</h1>
+                    <ul class="drive car_screen_ul clearfix">
+                        <li><span>全部</span></li>
+                        <li><span>前驱</span></li>
+                        <li><span>后驱</span></li>
+                        <li><span>四驱</span></li>
+                    </ul>
+                    <h1>能源</h1>
+                    <ul class="energy car_screen_ul clearfix">
+                        <li><span>全部</span></li>
+                        <li><span>汽油</span></li>
+                        <li><span>柴油</span></li>
+                        <li><span>油电混合</span></li>
+                        <li><span>纯电动</span></li>
+                        <li><span>插电式混动</span></li>
+                    </ul>
+                    <h1>变速箱</h1>
+                    <ul class="speed car_screen_ul clearfix">
+                        <li><span>全部</span></li>
+                        <li><span>手动</span></li>
+                        <li><span>自动</span></li>
+                    </ul>
+                    <h1>国别</h1>
+                    <ul class="countries car_screen_ul clearfix">
+                        <li><span>全部</span></li>
+                        <li><span>中国</span></li>
+                        <li><span>德国</span></li>
+                        <li><span>日本</span></li>
+                        <li><span>美国</span></li>
+                        <li><span>韩国</span></li>
+                        <li><span>其他</span></li>
+                    </ul>
+                    <h1>生产方式</h1>
+                    <ul class="generate car_screen_ul clearfix">
+                        <li><span>全部</span></li>
+                        <li><span>国产</span></li>
+                        <li><span>进口</span></li>
+                    </ul>
+                    <h1>结构</h1>
+                    <ul class="structure car_screen_ul clearfix">
+                        <li><span>全部</span></li>
+                        <li><span>两厢</span></li>
+                        <li><span>三厢</span></li>
+                        <li><span>掀背</span></li>
+                    </ul>
+                    <h1>配置</h1>
+                    <ul class="configure car_screen_ul clearfix">
+                        <li><span>全景天窗</span></li>
+                        <li><span>电动天窗</span></li>
+                        <li><span>电动调节座椅</span></li>
+                        <li><span>车身ESP</span></li>
+                        <li><span>氙气大灯</span></li>
+                        <li><span>定速巡航</span></li>
+                        <li><span>真皮座椅</span></li>
+                        <li><span>倒车雷达</span></li>
+                        <li><span>全自动空调</span></li>
+                    </ul>
+                </div>
+                <div class="carlist_bot">
+                    <p>已选条件共<em>939</em>辆车</p>
+                    <span>查看</span>
+                </div>
+            </div>
+            
+            <ul class="goods_list carlist_goodslist">
+                <li class="clearfix">
+                    <div class="goods_img">
+                        <img src="img/goods1.jpg"/>
+                    </div>
+                    <div class="goods_right">
+                        <p>法拉利F430 2005款Coupe4.3</p>
+                        <em>豪华家轿</em>
+                        <span>79.80万</span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="goods_img">
+                        <img src="img/goods1.jpg"/>
+                    </div>
+                    <div class="goods_right">
+                        <p>宝骏730 2017款 1.5L 手动舒适型</p>
+                        <em>豪华家轿</em>
+                        <span>7.48万</span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="goods_img">
+                        <img src="img/goods1.jpg"/>
+                    </div>
+                    <div class="goods_right">
+                        <p>别克君威 2017款 28T 尊贵型——玛瑙红</p>
+                        <em>豪华家轿</em>
+                        <span>45.80万</span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="goods_img">
+                        <img src="img/goods1.jpg"/>
+                    </div>
+                    <div class="goods_right">
+                        <p>别克君威 2017款 28T 尊贵型——玛瑙红</p>
+                        <em>豪华家轿</em>
+                        <span>45.80万</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

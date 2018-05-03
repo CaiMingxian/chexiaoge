@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>买车详情</title>
+        <link rel="stylesheet" href="css/bannerList.css">
+        <link rel="stylesheet" href="css/swiper.min.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/goodsDetails.css" />
+        <script type="text/javascript" src="js/bannerList.js" ></script>
+        <script type="text/javascript" src="js/jquery.min.js" ></script>
+    </head>
+    <body style="background: #f2f2f2;">
+        <div class="common_box goodsDetails_box">
+            <div class="common_header transparent clearfix">
+                <a href="javascript:history.go(-1)"><img src="img/return.png"/></a>
+                <p></p>
+                <span><!-- <img src="img/share.png" alt="" /> --></span>
+            </div>
+            <div class="container">
+                <div class="banner goods_banner">
+                    <ul>
+                      <li><img src="img/goods2.jpg"></li>
+                      <li><img src="img/goods1.jpg"></li>
+                    </ul>
+                    <div class="img-btn-list img-btn-list2 img_span"></div>
+                </div>
+            </div>
+            <div class="buyCar_brief">
+                <p>北京奔驰-奔驰GLC</p>
+                <div class="buyCar_oPrice">
+                    <span>官方指导价：<em>39.60-57.90万 </em></span>
+                </div>
+                <div class="buyCar_mPrice">
+                    <span>经销商报价：38.30-57.90万</span>
+                </div>
+            </div>
+            <div class="score_line buyCar_scoreline clearfix">
+                <span class="score_text">评分：</span>
+                <div class="pa_start">
+                    <span class="start_ling"></span>
+                    <span class="start_ling"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="scoreNumber">4.0分</span>
+                <i><img src="img/go_r.png" alt="" /></i><em>24人评价</em>
+            </div>
+            <div class="goodsDetails buyCarDetail_title">
+                <p>汽车详情</p>
+                <span>排量: 2.0T<br />级别: 中型SUV<br />变速箱: 手自一体<br /></span>
+            </div>
+            <div class="goodsdetails_img">
+                <img src="img/goods2.jpg" alt="" />
+            </div>
+            <div class="goods_bot buyCarDetail_bot">
+                <span class="goodsBot_call"><i><img src="img/call.png"/></i>咨询</span>
+                <span class="cunhuo">加入购物车</span>
+                <span class="buynow">买车</span>
+            </div>
+            
+            <div class="sku_bg"></div>
+            <div class="sku_box">
+                <div class="sku_top">
+                    <div class="sku_img">
+                        <img src="img/goods1.jpg" alt="" />
+                    </div>
+                    <div class="sku_title">
+                        <em>¥</em><span class="sku_price">19.00</span>
+                        <span class="sku_click">请选择规格</span>
+                        <span class="cancel"><img src="img/x.png"/></span>
+                    </div>
+                </div>
+                <div class="sku_choice">
+                    <div class="choice_box">
+                        <p>规格分类</p>
+                        <ul class="clearfix">
+                            <li class="active_choice">250ml</li>
+                            <li>450ml</li>
+                            <li>1000ml</li>
+                            <li>2500ml</li>
+                        </ul>
+                    </div>
+                    <div class="choice_box">
+                        <p>规格分类</p>
+                        <ul class="clearfix">
+                            <li>450ml</li>
+                            <li>1000ml</li>
+                            <li>2500ml</li>
+                        </ul>
+                    </div>
+                    <div class="choice_num clearfix">
+                        <span class="num_name">购买数量</span>
+                        <span class="num_box">
+                            <button class="jian">-</button>
+                            <input type="text" placeholder="" value="1">
+                            <button class="add">+</button>
+                        </span>
+                    </div>
+                </div>
+                <a href="submitOrder.html">
+                    <div class="sure_buy">确定</div>
+                </a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            bannerListFn(//轮播参数
+                $(".banner"),
+                $(".img-btn-list"),
+                $(".left-btn"),
+                $(".right-btn"),
+                3000,
+                true
+            );
+
+            $(".cunhuo").click(function(){
+                $(".sku_box").slideDown();
+                $(".sku_bg").fadeIn(200);
+            }); 
+            $(".buynow").click(function(){
+                $(".sku_box").slideDown();
+                $(".sku_bg").fadeIn(200);
+            }); 
+            $(".cancel").click(function(){
+                $(".sku_box").slideUp();
+                $(".sku_bg").fadeOut(200);
+            });
+            $(".sku_bg").click(function(){
+                $(".sku_box").slideUp();
+                $(".sku_bg").fadeOut(200);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>投保方案</title>
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/carInformation.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/insurancePolicy.js"></script>
+    </head>
+    <body style="background: #f2f2f2;">
+        <div class="common_box">
+            <div class="common_header clearfix">
+                <a href="javascript:history.go(-1)"><img src="img/back_l.png"/></a>
+                <p>投保方案</p>
+            </div>
+                <ul class="insurance_ul insure_city">
+                    <li><span>投保城市：</span><i></i><input type="text" readonly="readonly" placeholder=""/></li>
+                </ul>
+                <ul class="insurance_ul strong_insurance">    
+                    <li><label for="checkbox-1" class="label"><span>交强险：</span><em class="check_em"><input type="checkbox" checked="checked" id="checkbox-1" /><b class="check"></b></em></label></li>
+                    <li class="strong_in"><span>交强险起期：</span><i></i><input type="text" placeholder="" readonly="readonly"/></li>
+                </ul>
+                <ul class="insurance_ul commercial_insurance">
+                    <li><label for="checkbox-2" class="label"><span>商业险：</span><em class="check_em"><input type="checkbox" checked="checked" id="checkbox-2" /><b class="check"></b></em></label></li>
+                    <li><span>商业险起期：</span><i></i><input type="text" placeholder="" value="2018/01/16" readonly="readonly"/></li>
+                    <li><span>保额：</span><em class="small_t">（车损/盗抢/自燃）</em><i></i><input type="text" placeholder="" value="10.555万" readonly="readonly"/></li>
+                    <li class="carloss_isurance"><span>车辆损失险：</span><em class="gray_em active_em" data-red="true">不计免赔<s></s></em><label for="checkbox-3" class="label_pei"><em class="check_em"><input type="checkbox" checked="checked" id="checkbox-3" /><b class="check"></b></em></label></li>
+                    <div class="carloss"> 
+                        <li><span>第三方责任险：</span><em class="gray_em active_em" data-red="true">不计免赔<s></s></em><i></i><input type="text" placeholder="" value="50万" readonly="readonly"/></li>
+                        <li><span>司机座位险：</span><em class="gray_em active_em" data-red="true">不计免赔<s></s></em><i></i><input type="text" placeholder="" value="1万" readonly="readonly"/></li>
+                        <li><span>乘客座位险：</span><em class="gray_em active_em" data-red="true">不计免赔<s></s></em><i></i><input type="text" placeholder="" value="1万" readonly="readonly"/></li>
+                        <li><span>盗抢险：</span><em class="gray_em">不计免赔<s></s></em><label for="checkbox-4" class="label_pei"><em class="check_em"><input type="checkbox" id="checkbox-4" /><b class="check"></b></em></label></li>
+                    </div>
+                    <li><span>玻璃险：</span><a href="glassInsurance.html"><i></i><input type="text" placeholder="" value="不投保" readonly="readonly"/></a></li>
+                    <li><span>划痕险：</span><em class="gray_em">不计免赔<s></s></em><a href="scratchRisk.html"><i></i><input type="text" placeholder="" value="不投保" readonly="readonly"/></a></li>
+                    <li><span>自然险：</span><em class="gray_em">不计免赔<s></s></em><label for="checkbox-5" class="label_pei"><em class="check_em"><input type="checkbox" id="checkbox-5" /><b class="check"></b></em></label></li>
+                    <li><span>涉水险：</span><em class="gray_em">不计免赔<s></s></em><label for="checkbox-6" class="label_pei"><em class="check_em"><input type="checkbox" id="checkbox-6" /><b class="check"></b></em></label></li>
+                    <li><label for="checkbox-7" class="label"><span>制定专修厂特约险：</span><em class="check_em"><input type="checkbox" id="checkbox-7" /><b class="check"></b></em></label></li>
+                    <li><label for="checkbox-8" class="label"><span>第三方特约险：</span><em class="check_em"><input type="checkbox" id="checkbox-8" /><b class="check"></b></em></label></li>
+                </ul>
+            <a href="insuranceInquiry.html"><input type="button" class="button" value="下一步"></a>
+            <div class="btn_kefu"><i><img src="img/kefu.png"/></i>客服</div>
+        </div>
+    </body>
+</html>

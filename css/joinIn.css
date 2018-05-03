@@ -1,0 +1,59 @@
+.join_box{
+    width:100%;
+    height:100px;
+    margin-bottom: 10px;
+    background:white;
+    position: relative;
+}
+.join_box img{
+    width:100%;
+    height:100%;
+}
+.join_title{
+    position: absolute;
+    top:30px;
+    left:5%;
+}
+.join_title span{
+    color:#333333;
+    font-size: 1.8rem;
+    display:inline-block;
+    font-weight: bold;
+    padding-bottom: 14px;
+}
+.join_title .blue{
+    color:#008bfe;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.join_title em{
+    color:#999;
+    font-size: 1.2rem;
+}
+.join_title em i{
+    font-style: normal;
+    color:red;
+}
+/*车险投保2*/
+.top_img,.insure_img {
+    width:100%;
+    height:150px;
+    margin-bottom: 10px;
+}
+.top_img img,.insure_img img{
+    width:100%;
+    height:100%;
+}
+.insure_img{
+    width: 100%;
+    padding:0 12px;
+    height:120px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.nomore_tip{
+    color:#c8c8c8;
+    font-size: 1.2rem;
+    text-align: center;
+    padding:5px 0 50px;
+}

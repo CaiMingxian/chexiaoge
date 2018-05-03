@@ -1,0 +1,556 @@
+.goods_nav{
+    width: 100%;
+    position:fixed;
+    top:45px;
+    z-index:1;
+    padding:0 12px;
+    background:white;
+    border-bottom: 1px solid #ddd;
+    margin:0 auto;
+    margin-bottom: 10px;
+    min-width:300px;
+    max-width:640px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.goods_nav li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 1.4rem;
+    color:#666666;
+    line-height: 45px;
+}
+.goods_nav li a{
+    color:#666666;
+}
+.goods_nav .active_nav{
+    color:#0376d7;
+    border-bottom: 1px solid #0376d7;
+}
+.click_type{
+    display:inline-block;
+    width:10px;
+    height: 12px;
+}
+.click_type i{
+    display:block;
+    width: 9px;
+    height:5px;
+    position:relative;
+}
+.click_type .down{
+    margin-top:4px;
+}
+.click_type i img{
+    width: 9px;
+    height:5px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.goods_list{
+    margin-top:57px;
+    padding:0 12px;
+    background:white;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.goods_list li{
+    padding:15px 0;
+    border-bottom: 1px solid #ddd;
+}
+.goods_list li:last-child{
+    border:none;
+}
+.goods_list li .goods_img{
+    width: 38.8%;
+    padding-bottom: 38.8%;
+    height:0;
+    float:left;
+    border:1px solid #dfdfdf;
+    position:relative;
+    overflow:hidden;
+}
+.goods_right{
+    float:left;
+    display:block;
+    padding:0 0 0 15px;
+    width:60.5%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.goods_right p{
+    color: #333333;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    min-height: 61px;
+}
+.goods_right em{
+    color: #999999;
+    display:block;
+    font-size: 1rem;
+    margin-top:15px;
+}
+.goods_right span{
+    display:block;
+    color: #ff6600;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top:15px;
+}
+.goods_right span i{
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+}
+li .goods_img img{
+    width: 100%;
+    margin: auto;
+    min-height: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border:3px solid #f4f4f4;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/*筛选*/
+.type_click{
+    width:29.33%;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #666666;
+    border-right: 1px solid #d8d8d8;
+    font-size: 1.4rem;
+}
+.type_click .active_li{
+    color:#0376d7;
+    background: #f6f6f6;
+    border-bottom: 1px solid #0376d7;
+}
+.type_click li{
+    padding: 19px 0;
+    text-align: center;
+    border-bottom: 1px solid #d8d8d8;
+    background: #ececec;
+}
+.type_right{
+    width: 70%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: right;
+    color: #666666;
+    padding: 0 10px 0 5px;
+}
+.type_title{
+    width: 100%;
+    padding: 18px 0 15px;
+    font-size: 1.4rem;
+}
+.type_title i{
+    padding-bottom: 0.02rem;
+    display: inline-block;
+    width: 8px;
+    margin-right: 5px;
+}
+.type_title i img{
+    width: 100%;
+    vertical-align: middle;
+    margin: auto;
+}
+.type_title span{
+}
+.three_click{
+    font-size: 1.2rem;
+}
+.three_click table{
+    width:100%;
+}
+.three_click table td{
+    width: 33.3%;
+    background: white;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    float: left;
+    color: #666;
+    border: none;
+    border: 1px solid #d8d8d8;
+    line-height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*我的货单页面*/
+.order_list{
+    margin-top:57px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.order_single{
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-top:10px;
+}
+.order_title{
+    padding: 0 12px;
+    line-height: 42px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 1.4rem;
+}
+.order_title span:first-child {
+    color: #333333;
+}
+.order_title span:nth-child(2){
+    color: #0376d7;
+    float: right;
+}
+.order_main{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.main_news{
+    padding:15px 12px 0;
+}
+.order_img{
+    width:23.46%;
+    padding-bottom: 23.46%;
+    height: 0;
+    float: left;
+    border: 1px solid #dfdfdf;
+    position: relative;
+}
+.order_img img{
+    width: 100%;
+    margin: auto;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid #f4f4f4;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.main_mid{
+    float: left;
+    width: 52%;
+    height: 100%;
+    padding-left: 17px;
+}
+.main_mid span{
+    color: #333333;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    padding-bottom: 7px;
+}
+.main_mid em{
+    color: #999999;
+    font-size: 1.1rem;
+}
+.main_r{
+    width: 17.6%;
+    float: left;
+    text-align: right;
+}
+.main_r .price_icon {
+    font-style: normal;
+    color: #ff6600;
+    font-size: 1rem;
+}
+.main_r span{
+    color: #ff6600;
+    font-size: 1.3rem;
+}
+.main_r .price_num {
+    width: 100%;
+    display: block;
+    color: #999999;
+    font-size: 1.2rem;
+    padding-top: 14px;
+}
+.order_allprice{
+    color: #333333;
+    font-size: 1.3rem;
+    padding: 0 12px;
+    line-height: 42px;
+    border-bottom: 1px solid #dddddd;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.order_button{
+    padding: 13px 12px;
+}
+.order_button span{
+    display:inline-block;
+    width:21.33%;
+    line-height: 30px;
+    border-radius: 3px;
+    float:right;
+    font-size: 1.3rem;
+    text-align: center;
+    border:1px solid #ddd;
+}
+.order_button .order_color{
+    background:#0376d7;
+    color:#fff;
+    border:1px solid transparent;
+    margin-left:10px;
+}
+.order_button .order_trans{
+    background:#fff;
+    color:#666666;
+}
+/*汽车列表页面*/
+.carlist_header span{
+    width: 15%;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+.carlist_header span img{
+    width: 20px;
+    margin: 12px 12px 12px 0;
+    float: right;
+}
+.filter-nav{
+    width: 100%;
+    position: fixed;
+    top: 45px;
+    z-index: 2;
+    padding: 0 12px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    min-width: 300px;
+    max-width: 640px;
+    display: flex;
+    display: -webkit-flex;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.filter-nav span{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #424242;
+    line-height: 45px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.filter-nav span img{
+    width: 5px;
+    height: 3px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.filter-nav span:last-child em{
+    display:inline-block;
+    border:1px solid #c9c9c9;
+    border-radius: 15px;
+    padding:0 11px;
+    line-height: 28px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.filter-nav .active_energy{
+    color:#008bfe;
+}
+.carListscreen_box{
+    margin-top:46px;
+    display:none;
+}
+/*.carlist_goodslist{
+    display:none;
+}*/
+.carlist_goodslist .goods_right p{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+.carlist_goodslist .goods_right em{
+    font-size: 1.2rem;
+}
+.carlist_goodslist .goods_right span{
+    font-size: 1.5rem;
+}
+.sort_box{
+    width: 100%;
+    min-height: 110%;
+    position:fixed;
+    top:91px;
+    max-width:640px;
+    min-width:300px;
+    margin:0 auto;
+    z-index:1;
+}
+.sort_bg{
+    position:absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+.intelligence{
+    position:absolute;
+    top:0;
+    width: 100%;
+    background:white;
+}
+.intelligence li{
+    padding:0 12px;
+    line-height: 57px;
+    color:#333333;
+    font-size: 1.4rem;
+}
+.intelligence .active_energy,.carprice .active_energy{
+    color:#008bfe;
+}
+.intelligence_box,.carprice_box{
+    display:none;
+}
+.carprice{
+    position:absolute;
+    top:0;
+    width: 100%;
+    background:white;
+    padding:0 12px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.carprice li{
+    width: 33.33%;
+    float:left;
+    line-height: 57px;
+    color:#333333;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.filter-main{
+    width: 100%;
+    background:white;
+    padding-top:10px;
+    padding-bottom: 50px;
+}
+.filter-main h1{
+    font-size: 1.6rem;
+    padding:10px 12px 0;
+    color:#333333;
+}
+.carListscreen{
+    margin:0 12px;
+    padding:0 0 20px;
+    border-bottom: 1px solid #eaeaea;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.carListscreen li{
+    width: 33.33%;
+    float:left;
+    color:#333;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top:23px;
+}
+.carListscreen li i{
+    display:block;
+    width: 81.54%;
+    padding-bottom: 31.33%;
+    height:0;
+    margin-bottom: 12px;
+    position:relative;
+}
+.carListscreen li i img{
+    width: 100%;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.car_screen_ul{
+    padding:0 0 20px;
+    margin:0 6px;
+    border-bottom: 1px solid #eaeaea;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.car_screen_ul li{
+    width:33.33%;
+    float:left;
+    padding: 15px 6px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.car_screen_ul li span{
+    display: block;
+    height: 34px;
+    font-size: 1.5rem;
+    line-height: 37px;
+    color: #666666;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+}
+.car_screen_ul li .active_touch{
+    border:1px solid #008bfe;
+    color:#008bfe;
+    background:#d1e9fd;
+    background:rgba(0,139,254,.1);
+}
+.configure{
+    border:none;
+}
+.carlist_bot{
+    width: 100%;
+    height: 50px;
+    max-width: 640px;
+    min-width: 300px;
+    position: fixed;
+    bottom: 0;
+    background:white;
+    border-top: 1px solid #e6e6e6;
+}
+.carlist_bot p{
+    float: left;
+    width: 60%;
+    color:#333333;
+    font-size: 1.4rem;
+    line-height: 50px;
+    text-align: center;
+}
+.carlist_bot em{
+    color:#008bfe;
+}
+.carlist_bot span{
+    float: right;
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 1.8rem;
+    background:#008bfe;
+    text-align: center;
+    color:#fff;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>店铺详情</title>
+        <link rel="stylesheet" href="css/bannerList.css">
+        <link rel="stylesheet" href="css/swiper.min.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/goodsDetails.css" />
+        <script type="text/javascript" src="js/bannerList.js" ></script>
+        <script type="text/javascript" src="js/jquery.min.js" ></script>
+    </head>
+    <body style="background: #f2f2f2;">
+        <div class="common_box goodsDetails_box">
+            <div class="common_header transparent clearfix">
+                <a href="javascript:history.go(-1)"><img src="img/return.png"/></a>
+                <p></p>
+                <span><!-- <img src="img/share.png" alt="" /> --></span>
+            </div>
+            <div class="container">
+                <div class="banner goods_banner">
+                    <ul>
+                      <li><img src="img/goods2.jpg"></li>
+                      <li><img src="img/goods1.jpg"></li>
+                    </ul>
+                    <div class="img-btn-list img-btn-list2 img_span"></div>
+                </div>
+            </div>
+            
+            <div class="score_line clearfix">
+                <div class="pa_start">
+                    <span class="start_ling"></span>
+                    <span class="start_ling"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="scoreNumber">4.0分</span>
+                <i><img src="img/go_r.png" alt="" /></i><em>24人评价</em>
+            </div>
+
+            <div class="businessInformation">
+                <h1>商家信息</h1>
+                <div class="businessNews">
+                    <p>黄石康祥汽车美容维修中心</p>
+                    <div class="addressDetails clearfix">
+                    <span>广州市白云区地铁嘉禾望岗站C出口西南方向</span><span><i><img src="img/gray_loca.png" alt="" /></i>3.0km</span>  
+                    </div>
+                    <span>电话：13800138000</span><i class="call_phone"><img src="img/call_bor.png" alt="" /></i>
+                </div>
+            </div>
+
+            <div class="businessInformation">
+                <h1>商家简介</h1>
+                <div class="businessText">
+                    XX汽车修理厂建于2000年4月，有员工二十余人，质检员2人，高级技工4人，中级技工7人，初级工4人，从管理人员到维修技工均来自各4S店。<br />恒强汽车修理厂属于二类维修企业，设备齐全，拥有业务接待室
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            bannerListFn(//轮播参数
+                $(".banner"),
+                $(".img-btn-list"),
+                $(".left-btn"),
+                $(".right-btn"),
+                3000,
+                true
+            );
+        </script>
+    </body>
+</html>

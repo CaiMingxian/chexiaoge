@@ -1,0 +1,16 @@
+.cI_banner{
+	width: 100%;
+	height: 170px;
+}
+.cI_banner img{
+	width: 100%;
+	height: 100%;
+}
+/* 汽车贷款页面 */
+.cI_ul .cc_li span{
+	width:24%;
+	text-align: left;
+}
+.cI_ul .cc_li input{
+	width:68%;
+}

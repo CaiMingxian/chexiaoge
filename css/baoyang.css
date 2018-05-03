@@ -1,0 +1,78 @@
+.baoyang{
+	padding:20px 10px;
+	background: white;
+}
+.baoyang span{
+	color: #333;
+	font-size: 1.4rem;
+}
+.baoyang .baoyang_time{
+	display: block;
+	padding-top:15px;
+}
+.baoyang span em{
+	color: #008bfe;
+}
+.choice_title{
+	padding:13px 15px 18px 15px;
+	background: white;
+	margin-bottom: 10px;
+}
+.choice_title .choice_l,.choice_title .choice_r{
+	width: 45%;
+	line-height: 38px;
+	font-size: 1.5rem;
+	text-align: center;
+	border-radius: 3px;
+}
+.choice_title .choice_l{
+	color: white;
+	background: #fe8f00;
+	border:1px solid #fe8f00;
+	float: left;
+}
+.choice_title .choice_r{
+	color: #fe8f00;
+	border:1px solid #fe8f00;
+	float: right;
+}
+.baoyang_click{
+	padding:5px 12px 5px 12px;
+}
+.baoyang_click li{
+	padding:10px 0 0 0;
+	border-bottom: 1px dashed #e2e2e2;
+	color:#333;
+	font-size: 1.5rem;
+}
+.baoyang_click li:last-child{
+	border:none;
+}
+.click_type{
+	width: 26%;
+	display:inline-block;
+	float:left;
+	text-align: right;
+	line-height: 29px;
+}
+.baoyang_click div{
+	width:72%;
+	float:left;
+	padding-left: 5px;
+}
+.baoyang_click div span{
+	display:inline-block;
+	padding: 7px 16px;
+	color:#333333;
+	border:1px solid #e2e2e2;
+	font-size: 1.3rem;
+	margin:0 10px 10px 0;
+	border-radius: 3px;
+}
+.baoyang_click div .active_span{
+	border:1px solid #007de4;
+	color:#007de4;
+}
+.margin_but{
+	margin:15px 4% 37.5px 4%
+}
